@@ -1,0 +1,31 @@
+Sub connect()
+       If Sheet3.Range("B2").Value = True Then
+    ActiveWorkbook.SlicerCaches("Slicer_College_Name").PivotTables.AddPivotTable ( _
+        ActiveSheet.PivotTables("PivotTable1"))
+        Else
+    ActiveWorkbook.SlicerCaches("Slicer_College_Name").PivotTables.RemovePivotTable _
+        (ActiveSheet.PivotTables("PivotTable1"))
+        End If
+           If Sheet3.Range("I2").Value = True Then
+    ActiveWorkbook.SlicerCaches("Slicer_College_Name").PivotTables.AddPivotTable ( _
+        ActiveSheet.PivotTables("PivotTable2"))
+        Else
+    ActiveWorkbook.SlicerCaches("Slicer_College_Name").PivotTables.RemovePivotTable _
+        (ActiveSheet.PivotTables("PivotTable2"))
+        End If
+           If Sheet3.Range("M2").Value = True Then
+    ActiveWorkbook.SlicerCaches("Slicer_College_Name").PivotTables.AddPivotTable ( _
+        ActiveSheet.PivotTables("PivotTable3"))
+        Else
+    ActiveWorkbook.SlicerCaches("Slicer_College_Name").PivotTables.RemovePivotTable _
+        (ActiveSheet.PivotTables("PivotTable3"))
+        End If
+           If Sheet3.Range("P2").Value = True Then
+    ActiveWorkbook.SlicerCaches("Slicer_College_Name").PivotTables.AddPivotTable ( _
+        ActiveSheet.PivotTables("PivotTable5"))
+        Else
+    ActiveWorkbook.SlicerCaches("Slicer_College_Name").PivotTables.RemovePivotTable _
+        (ActiveSheet.PivotTables("PivotTable5"))
+        End If
+        
+End Sub
